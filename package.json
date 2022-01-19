@@ -1,0 +1,50 @@
+{
+  "name": "@garron/standard",
+  "version": "1.0.0",
+  "description": "前端配置文件规范",
+  "author": "geallenboy <gejialun88@163.com>",
+  "main": "index.js",
+  "keywords": [
+    "eslint",
+    "prettier",
+    "stylelint"
+  ],
+  "license": "MIT",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org/",
+    "access": "public"
+  },
+  "homepage": "https://github.com/geallenboy/garron-standard",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/geallenboy/garron-standard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/geallenboy/garron-standard/issues"
+  },
+  "scripts": {
+    "build": "tsc --build tsconfig.json",
+    "lint": "npm run build && cd example && npm run lint",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.1.0",
+    "@typescript-eslint/parser": "^4.1.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.8.1",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-vue": "^6.2.2",
+    "typescript": "^3.8.3",
+    "vue-eslint-parser": "^7.1.0"
+  },
+  "devDependencies": {
+    "np": "^6.5.0"
+  }
+}
