@@ -5,7 +5,6 @@
     "target": "es5",
     "lib": ["esnext", "dom"],
     "baseUrl": ".",
-    "jsx": "react",
     "allowSyntheticDefaultImports": true,
     "moduleResolution": "node",
     "forceConsistentCasingInFileNames": true,
@@ -21,13 +20,10 @@
     "node_modules",
     "build",
     "scripts",
-    "acceptance-tests",
     "webpack",
     "jest",
     "dist",
     "src/setupTests.ts",
-    "tslint:latest",
-    "tslint-config-prettier",
     "example/**"
   ]
 }

@@ -30,7 +30,7 @@ module.exports = {
 in `.prettierrc.js`
 
 ```js
-const garron = require('@garron/standard');
+const garron = require('@garron/standard/dist');
 
 module.exports = {
   ...garron.prettierLint,

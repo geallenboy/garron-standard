@@ -1,10 +1,10 @@
 "use strict";
-var javascriptLint = require('./javascript');
-var prettierLint = require('./prettier');
-var reactLint = require('./react');
-var styleLint = require('./stylelint');
-var typescriptLint = require('./typescript');
-var vueLint = require('./vue');
+var javascriptLint = require('./javascriptLint');
+var prettierLint = require('./prettierLint');
+var reactLint = require('./reactLint');
+var styleLint = require('./styleLint');
+var typescriptLint = require('./typescriptLint');
+var vueLint = require('./vueLint');
 module.exports = {
     javascriptLint: javascriptLint,
     prettierLint: prettierLint,

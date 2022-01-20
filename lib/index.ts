@@ -1,9 +1,9 @@
-const javascriptLint = require('./javascript');
-const prettierLint = require('./prettier');
-const reactLint = require('./react');
-const styleLint = require('./stylelint');
-const typescriptLint = require('./typescript');
-const vueLint = require('./vue');
+const javascriptLint = require('./javascriptLint');
+const prettierLint = require('./prettierLint');
+const reactLint = require('./reactLint');
+const styleLint = require('./styleLint');
+const typescriptLint = require('./typescriptLint');
+const vueLint = require('./vueLint');
 
 module.exports = {
   javascriptLint,
