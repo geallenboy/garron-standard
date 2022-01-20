@@ -1,6 +1,6 @@
 {
   "name": "@garron/standard",
-  "version": "1.0.0",
+  "version": "1.1.2",
   "description": "前端配置文件规范",
   "author": "garron <gejialun88@163.com>",
   "main": "index.js",
@@ -18,7 +18,7 @@
     "lib"
   ],
   "publishConfig": {
-    "registry": "http://registry.npmjs.org/",
+    "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
   "homepage": "https://github.com/geallenboy/garron-standard",
@@ -46,7 +46,6 @@
   },
   "devDependencies": {
     "prettier": "^2.5.1",
-    "np": "^6.5.0",
     "rimraf": "^3.0.2"
   }
 }

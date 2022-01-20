@@ -5,7 +5,6 @@
 
 
 # production
-/dist
 /.vscode
 
 # misc
@@ -31,4 +30,3 @@ functions/*
 screenshot
 .firebase
 .eslintcache
-dist
