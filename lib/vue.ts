@@ -1,8 +1,8 @@
 /**
  * ESLint vue 规则
  * 依赖版本：
- *   vue-eslint-parser ^7.1.0
- *   eslint-plugin-vue ^6.2.2
+ *   vue-eslint-parser
+ *   eslint-plugin-vue
  */
 module.exports = {
   parser: 'vue-eslint-parser',

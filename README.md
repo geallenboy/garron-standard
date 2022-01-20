@@ -1,14 +1,14 @@
-# `standard`
+# garron/standard
 
 > prettier，eslint，stylelint 的配置文件合集
 
-## Usage
+## 使用
 
 in `.eslintrc.js`
 
 ```js
 module.exports = {
-  extends: [require.resolve('@garron/standard/dist/eslint')],
+  extends: [require.resolve('@garron/standard/dist/javascriptLint')],
 
   rules: {
     // your rules
@@ -20,7 +20,7 @@ in `.stylelintrc.js`
 
 ```js
 module.exports = {
-  extends: [require.resolve('@garron/standard/dist/stylelint')],
+  extends: [require.resolve('@garron/standard/dist/styleLint')],
   rules: {
     // your rules
   },
@@ -30,9 +30,9 @@ module.exports = {
 in `.prettierrc.js`
 
 ```js
-const fabric = require('@garron/standard');
+const garron = require('@garron/standard');
 
 module.exports = {
-  ...fabric.prettier,
+  ...garron.prettierLint,
 };
 ```

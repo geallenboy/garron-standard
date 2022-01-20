@@ -2,7 +2,7 @@
   "name": "@garron/standard",
   "version": "1.0.0",
   "description": "前端配置文件规范",
-  "author": "geallenboy <gejialun88@163.com>",
+  "author": "garron <gejialun88@163.com>",
   "main": "index.js",
   "keywords": [
     "eslint",
@@ -30,8 +30,8 @@
     "url": "https://github.com/geallenboy/garron-standard/issues"
   },
   "scripts": {
-    "build": "tsc --build tsconfig.json",
-    "lint": "npm run build && cd example && npm run lint",
+    "build": "rimraf dist && tsc --build tsconfig.json",
+    "prettier": "prettier -c --write \"**/*.ts\"",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
@@ -45,6 +45,8 @@
     "vue-eslint-parser": "^7.1.0"
   },
   "devDependencies": {
-    "np": "^6.5.0"
+    "prettier": "^2.5.1",
+    "np": "^6.5.0",
+    "rimraf": "^3.0.2"
   }
 }

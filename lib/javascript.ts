@@ -1,8 +1,8 @@
 /**
  * ESLint base 规则
  * 依赖版本：
- *   eslint ^7.7.0
- *   babel-eslint ^10.1.0
+ *   eslint
+ *   babel-eslint
  */
 module.exports = {
   parser: 'babel-eslint',
