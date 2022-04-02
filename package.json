@@ -1,6 +1,6 @@
 {
   "name": "@garron/standard",
-  "version": "1.2.6",
+  "version": "1.2.7",
   "description": "前端配置文件规范",
   "author": "garron <gejialun88@163.com>",
   "keywords": [
@@ -8,7 +8,6 @@
     "prettier",
     "stylelint"
   ],
-  
   "homepage": "https://github.com/geallenboy/garron-standard",
   "repository": {
     "type": "git",
@@ -23,14 +22,24 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.1.0",
-    "@typescript-eslint/parser": "^4.1.0",
+    "@types/node": "^17.0.23",
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.8.1",
+    "eslint": "^8.9.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-define-config": "^1.2.5",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.4.1",
     "eslint-plugin-react": "^7.20.6",
-    "eslint-plugin-vue": "^6.2.2",
-    "typescript": "^3.8.3",
-    "vue-eslint-parser": "^7.1.0"
+    "stylelint": "^14.5.1",
+    "stylelint-config-html": "^1.0.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-recommended": "^7.0.0",
+    "stylelint-config-standard": "^25.0.0",
+    "stylelint-order": "^5.0.0",
+    "typescript": "^4.5.5",
+    "vue-eslint-parser": "^8.3.0"
   },
   "devDependencies": {
     "prettier": "^2.5.1",
