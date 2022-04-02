@@ -18,12 +18,8 @@
   },
   "exclude": [
     "node_modules",
-    "build",
     "scripts",
-    "webpack",
     "jest",
     "dist",
-    "src/setupTests.ts",
-    "example/**"
   ]
 }

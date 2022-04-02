@@ -1,6 +1,6 @@
 {
   "name": "@garron/standard",
-  "version": "1.2.7",
+  "version": "1.2.8",
   "description": "前端配置文件规范",
   "author": "garron <gejialun88@163.com>",
   "keywords": [
@@ -44,5 +44,6 @@
   "devDependencies": {
     "prettier": "^2.5.1",
     "rimraf": "^3.0.2"
-  }
+  },
+  "files":["dist"]
 }

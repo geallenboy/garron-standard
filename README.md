@@ -4,7 +4,7 @@
 
 ## 使用
 
-in `.eslintrc.js`
+ `.eslintrc.js`
 
 ```js
 module.exports = {
@@ -16,7 +16,7 @@ module.exports = {
 };
 ```
 
-in `.stylelintrc.js`
+ `.stylelintrc.js`
 
 ```js
 module.exports = {
@@ -27,7 +27,7 @@ module.exports = {
 };
 ```
 
-in `.prettierrc.js`
+ `.prettierrc.js`
 
 ```js
 const garron = require('@garron/standard/dist');
