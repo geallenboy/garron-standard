@@ -7,32 +7,27 @@
  `.eslintrc.js`
 
 ```js
+const vue3Lint = require('@garron/standard/dist/vue3Lint');
 module.exports = {
-  extends: [require.resolve('@garron/standard/dist/javascriptLint')],
-
-  rules: {
-    // your rules
-  },
+  ...vue3Lint,
 };
 ```
 
  `.stylelintrc.js`
 
 ```js
+const styleLint = require('@garron/standard/dist/styleLint');
 module.exports = {
-  extends: [require.resolve('@garron/standard/dist/styleLint')],
-  rules: {
-    // your rules
-  },
+  ...styleLint,
 };
 ```
 
  `.prettierrc.js`
 
 ```js
-const garron = require('@garron/standard/dist');
+const prettierLint = require('@garron/standard/dist/prettierLint');
 
 module.exports = {
-  ...garron.prettierLint,
+  ...prettierLint,
 };
 ```

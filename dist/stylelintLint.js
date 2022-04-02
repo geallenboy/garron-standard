@@ -2,18 +2,20 @@
 module.exports = {
     root: true,
     plugins: ['stylelint-order'],
+    customSyntax: 'postcss-html',
     extends: ['stylelint-config-standard', 'stylelint-config-prettier'],
     rules: {
+        'selector-class-pattern': null,
         'selector-pseudo-class-no-unknown': [
             true,
             {
-                ignorePseudoClasses: ['deep'],
+                ignorePseudoClasses: ['global'],
             },
         ],
         'selector-pseudo-element-no-unknown': [
             true,
             {
-                ignorePseudoElements: ['v-deep', ':deep'],
+                ignorePseudoElements: ['v-deep'],
             },
         ],
         'at-rule-no-unknown': [
@@ -40,6 +42,7 @@ module.exports = {
         'font-family-no-missing-generic-family-keyword': null,
         'declaration-colon-space-after': 'always-single-line',
         'declaration-colon-space-before': 'never',
+        // 'declaration-block-trailing-semicolon': 'always',
         'rule-empty-line-before': [
             'always',
             {
@@ -67,4 +70,25 @@ module.exports = {
         ],
     },
     ignoreFiles: ['**/*.js', '**/*.jsx', '**/*.tsx', '**/*.ts'],
+    overrides: [
+        {
+            files: ['*.vue', '**/*.vue', '*.html', '**/*.html'],
+            extends: ['stylelint-config-recommended', 'stylelint-config-html'],
+            rules: {
+                'keyframes-name-pattern': null,
+                'selector-pseudo-class-no-unknown': [
+                    true,
+                    {
+                        ignorePseudoClasses: ['deep', 'global'],
+                    },
+                ],
+                'selector-pseudo-element-no-unknown': [
+                    true,
+                    {
+                        ignorePseudoElements: ['v-deep', 'v-global', 'v-slotted'],
+                    },
+                ],
+            },
+        },
+    ],
 };
